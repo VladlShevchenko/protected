@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="catalog.css">
   <link rel="stylesheet" href="checkbox.css">
+  <link rel="stylesheet" href="menu.css">
+
   <!--  <link rel="stylesheet" href="input_box.css">-->
   <link rel="stylesheet" href="../bootstrap/bootstrap-grid.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,17 +63,28 @@
     <button class="button success">Log in</button>
   </div>
   <div class="line"></div>
-  <!--    <div class="header_in_mobile">-->
-  <!--      <div class="logo">-->
-  <!--        <a href="index.html"><img src="img/Logo.png" alt="" ></a>-->
-  <!--      </div>-->
-  <!--      <div class="icons">-->
-  <!--        <a class="icon" href="#"><i class="fa-solid fa-phone"></i></a>-->
-  <!--        <a class="icon" href="#"><i class="fa-solid fa-bars"></i></a>-->
-  <!--      </div>-->
-
-  <!--    </div>-->
+  <div class="header_in_mobile">
+    <div class="logo">
+      <a href="index.html">Protected</a>
+    </div>
+    <section class="top-nav">
+    <div class="icons">
+<!--      <a class="icon" href="#"><i class="fa-solid fa-phone"></i></a>-->
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+      </ul>
+    </div>
+    </section>
   </div>
+      <div class="line"></div>
 
 </header>
 
@@ -143,13 +156,15 @@
     </div>
   </section>
   <section class="how_it_works">
+    <!--    <div class="container-general-info">-->
+
     <div class="container">
-      <div class="how_it_works_dekstop">
+      <!--      <div class="how_it_works_dekstop">-->
       <h2>Про <span class="gold">нас</span></h2>
       <h3 class="grey">Ми всесвітньо відома компанія Protected, яка розробляє безпекове програмне забезпечення вже
         більше ніж 10 років.</h3>
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="about_us_text_and_button">
             <h3 class="text">Як <span class="gold">це працює</span></h3>
 
@@ -170,25 +185,24 @@
             </div>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-md-6 col-lg-5">
           <a href="#" class="catalog_lending">
             <img class="background" src="../img/Rectangle%202704.png" alt="">
             <img class="second_photo" src="../img/Composition_10%201.png" alt="">
           </a>
         </div>
-        <div class="col-1">
-          <img class="windows_photo" src="../img/windows.png" alt="">
+        <div class="row-cols-1 col-lg-1">
+          <div class="icons">
+            <img class="windows_photo" src="../img/windows.png" alt="">
 
-          <img class="mac_photo" src="../img/ios.png" alt="">
+            <img class="mac_photo" src="../img/ios.png" alt="">
 
-          <img class="linux_photo" src="../img/linux.png" alt="">
+            <img class="linux_photo" src="../img/linux.png" alt="">
+          </div>
         </div>
       </div>
-      </div>
-      <div class="how_it_works_mobile">
-        <div class="tile_box_mobile"></div>
-      </div>
     </div>
+    <!--    </div>-->
   </section>
   <section class="plans">
     <!--    <div class="text_about_plans">-->
@@ -214,58 +228,62 @@
           <p class="text_for_year">Щорічно (<span class="gold">економія до 20%</span>)</p>
         </div>
       </div>
-      <div class="col-4">
-        <div class="tile_box">
-          <div class="tile_inner_box">Довга перспектива</div>
-          <img class="photo_icon1" src="../img/icon1.png" alt="">
-          <div class="tile_inner_price">$100</div>
-          <div class="tile_inner_header_text">Для <span class="gold">пасивних</span> користувачів</div>
-          <div class="tile_inner_text">Включає основні можливості антивірусу. Може захистити Ваш пристрій від різного
-            небезпечного ПЗ, але не включає інтернет-захист.
-          </div>
-          <div class="about_us_button">
-            <a href="#">
-              Обрати
-            </a>
+      <div class="col-12 col-md-4">
+        <div class="tile_box_left">
+          <div class="tile_box">
+            <div class="tile_inner_box">Довга перспектива</div>
+            <img class="photo_icon1" src="../img/icon1.png" alt="">
+            <div class="tile_inner_price">$100</div>
+            <div class="tile_inner_header_text">Для <span class="gold">пасивних</span> користувачів</div>
+            <div class="tile_inner_text">Включає основні можливості антивірусу. Може захистити Ваш пристрій від різного
+              небезпечного ПЗ, але не включає інтернет-захист.
+            </div>
+            <div class="about_us_button">
+              <a href="#">
+                Обрати
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="tile_box">
-          <div class="tile_inner_box_orange">Найбільш популярний</div>
-          <img class="photo_icon1" src="../img/icon2.png" alt="">
-          <div class="tile_inner_price"><span class="gold">$200</span></div>
-          <div class="tile_inner_header_text">Для <span class="gold">активних</span> користувачів</div>
-          <div class="tile_inner_text_2">Включає в себе всі можливості антивірусу. Захистить девайс на кожному кроці
-            Вашої активності.
+      <div class="col-12 col-md-4">
+        <div class="tile_box_right">
+          <div class="tile_box">
+            <div class="tile_inner_box_orange">Найбільш популярний</div>
+            <img class="photo_icon1" src="../img/icon2.png" alt="">
+            <div class="tile_inner_price"><span class="gold">$200</span></div>
+            <div class="tile_inner_header_text">Для <span class="gold">активних</span> користувачів</div>
+            <div class="tile_inner_text_2">Включає в себе всі можливості антивірусу. Захистить девайс на кожному кроці
+              Вашої активності.
+            </div>
+            <div class="about_us_button">
+              <a href="#">
+                Обрати
+              </a>
+            </div>
           </div>
-          <div class="about_us_button">
-            <a href="#">
-              Обрати
-            </a>
-          </div>
-
         </div>
       </div>
-      <div class="col-4">
-        <div class="tile_box">
-          <div class="tile_inner_box_purple">Для 2+ користувачів</div>
-          <img class="photo_icon1" src="../img/icon3.png" alt="">
-          <div class="tile_inner_price">$300</div>
-          <div class="tile_inner_header_text">Для <span class="gold">багатьох</span> акаунтів</div>
-          <div class="tile_inner_text_2">Включає всі можливості антивірусу. Можна активувати на 5 девайсах одночасно
-          </div>
-          <div class="about_us_button">
-            <a href="#">
-              Обрати
-            </a>
+      <div class="col-12 col-md-4">
+        <div class="tile_box_left">
+          <div class="tile_box">
+            <div class="tile_inner_box_purple">Для 2+ користувачів</div>
+            <img class="photo_icon1" src="../img/icon3.png" alt="">
+            <div class="tile_inner_price">$300</div>
+            <div class="tile_inner_header_text">Для <span class="gold">багатьох</span> акаунтів</div>
+            <div class="tile_inner_text_2">Включає всі можливості антивірусу. Можна активувати на 5 девайсах одночасно
+            </div>
+            <div class="about_us_button">
+              <a href="#">
+                Обрати
+              </a>
+            </div>
           </div>
         </div>
-
       </div>
 
     </div>
-    <h3 class="grey">5 000+ задоволених користувачів з усього світу</h3>
+    <h3 class="grey_text">5 000+ задоволених користувачів з усього світу</h3>
 
     <div class="box">
       <img class="partners_image" src="../img/image%2017.png" alt="">
@@ -278,69 +296,74 @@
 
     <h2><span class="gold">Відгуки</span></h2>
     <div class="feedback">
-      <!--    <div class="row">-->
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="tile_table_left">
+            <div class="tile_box_feedback">
+              <div class="row">
+                <div class="col-4">
+                  <img class="avatar" src="../img/unsplash_763-mBawsfg.png" alt="">
+                </div>
+                <div class="col-6">
+                  <div class="feedback_name">Harrison Ford</div>
+                </div>
+                <div class="col-2">
+                  <div class="estimation">9,3</div>
+                  <img class="star_image" src="../img/star.png" alt="">
+                </div>
+              </div>
+              <div class="feedback_text">Great antivirus which keep my devices safety and well-performed. Great job!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="tile_table_right">
+            <div class="tile_box_feedback">
+              <div class="row">
+                <div class="col-4">
+                  <img class="avatar" src="../img/unsplash_mEZ3PoFGs_k.png" alt="">
+                </div>
+                <div class="col-6">
+                  <div class="feedback_name">Alex Johnson</div>
+                </div>
+                <div class="col-2">
+                  <div class="estimation">9,8</div>
+                  <img class="star_image" src="../img/star.png" alt="">
+                </div>
+              </div>
+              <div class="feedback_text">It was one of my best investments! This antivirus is realy cool.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="tile_table_left">
+            <div class="tile_box_feedback">
+              <div class="row">
+                <div class="col-4">
+                  <img class="avatar" src="../img/unsplash_xOjzehJ49Hk.png" alt="">
+                </div>
+                <div class="col-6">
+                  <div class="feedback_name">Paulina Rox</div>
+                </div>
+                <div class="col-2">
+                  <div class="estimation">9,5</div>
+                  <img class="star_image" src="../img/star.png" alt="">
+                </div>
+              </div>
+              <div class="feedback_text">Best antivirus which keep my devices always secured and not cut their
+                performance.
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <!--    <div class="col-4">-->
-      <div class="tile_box_feedback">
-        <div class="row">
-          <div class="col-4">
-            <img class="avatar" src="../img/unsplash_763-mBawsfg.png" alt="">
-          </div>
-          <div class="col-6">
-            <div class="feedback_name">Harrison Ford</div>
-          </div>
-          <div class="col-2">
-            <div class="estimation">9,3</div>
-            <img class="star_image" src="../img/star.png" alt="">
-          </div>
-        </div>
-        <div class="feedback_text">Great antivirus which keep my devices <br> safety and well-performed. Great job!
-        </div>
-      </div>
-      <!--    </div>-->
-      <!--    <div class="col-4">-->
-      <div class="tile_box_feedback">
-        <div class="row">
-          <div class="col-4">
-            <img class="avatar" src="../img/unsplash_mEZ3PoFGs_k.png" alt="">
-          </div>
-          <div class="col-6">
-            <div class="feedback_name">Alex Johnson</div>
-          </div>
-          <div class="col-2">
-            <div class="estimation">9,8</div>
-            <img class="star_image" src="../img/star.png" alt="">
-          </div>
-        </div>
-        <div class="feedback_text">It was one of my best investments! This<br>antivirus is realy cool.</div>
-      </div>
-      <!--    </div>-->
-      <!--    <div class="col-4">-->
-      <div class="tile_box_feedback">
-        <div class="row">
-          <div class="col-4">
-            <img class="avatar" src="../img/unsplash_xOjzehJ49Hk.png" alt="">
-          </div>
-          <div class="col-6">
-            <div class="feedback_name">Paulina Rox</div>
-          </div>
-          <div class="col-2">
-            <div class="estimation">9,5</div>
-            <img class="star_image" src="../img/star.png" alt="">
-          </div>
-        </div>
-        <div class="feedback_text">Best antivirus which keep my devices<br> always secured and not cut their<br>
-          performance.
+        <div class="swipe_box">
+          <img src="../img/clicking%202handsClick.png" alt="">
+          <div class="swipe_text">Свайпніть, щоб пролистати карусель</div>
         </div>
       </div>
     </div>
-
-    <div class="swipe_box">
-      <img src="../img/clicking%202handsClick.png" alt="">
-      <div class="swipe_text">Свайпніть, щоб пролистати карусель</div>
-    </div>
-    <!--      </div>-->
-    <!--    </div>-->
 
   </section>
 </main>
