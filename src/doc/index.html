@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Protected Головна</title>
   <link type="Image/x-icon" href="img/logo_title.png" rel="icon">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="catalog.css">
-  <link rel="stylesheet" href="checkbox.css">
-  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/catalog.css">
+  <link rel="stylesheet" href="../css/checkbox.css">
+  <link rel="stylesheet" href="../css/menu.css">
 
   <!--  <link rel="stylesheet" href="input_box.css">-->
   <link rel="stylesheet" href="../bootstrap/bootstrap-grid.css">
@@ -67,22 +67,24 @@
     <div class="logo">
       <a href="index.html">Protected</a>
     </div>
-    <section class="top-nav">
     <div class="icons">
-<!--      <a class="icon" href="#"><i class="fa-solid fa-phone"></i></a>-->
-      <input id="menu-toggle" type="checkbox" />
-      <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
-      <ul class="menu">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-        <li>Four</li>
-        <li>Five</li>
-      </ul>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li>Про нас</li></a>
+            <a href="plans.html"><li>Плани</li></a>
+            <a href="#"><li>Відгуки</li></a>
+            <a href="faq.html"><li>FAQ</li></a>
+            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+          </ul>
+        </div>
+      </nav>
     </div>
-    </section>
   </div>
       <div class="line"></div>
 
@@ -114,9 +116,10 @@
             <!--            </div>-->
           </div>
         </div>
-
-        <div class="arrow_button">
-          <a href="#">
+        <div class="row">
+          <div class="col-6">
+        <button class="arrow_button" id="myBtn">
+          <a href="#" class="scroll-down" address="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                  class="bi bi-arrow-down-short" viewBox="0 0 16 16">
               <path fill-rule="evenodd"
@@ -124,8 +127,9 @@
             </svg>
             <i class="bi bi-arrow-down-short"></i>
           </a>
+        </button>
         </div>
-
+        </div>
       </div>
       <div class="about_us_mobile">
         <div class="row">
@@ -416,26 +420,18 @@
     <div class="foot_900px">
       <div class="row">
         <div class="col-md-6">
-          <a href="#" class="h12"><h3>КОНТАКТИ</h3></a>
+          <div class="h12">КОНТАКТИ</div>
           <div>
-            <a href="tel:+380685059650">+38 (068) 505 96 50</a><br>
-            <a href="tel:+380507517161">+38 (050) 751 71 61</a><br>
-            <a href="#">Email: salonskla@ukr.net</a><br>
-            <a href="#">Львівська обл., м. Броди, вул. Руська, 9</a>
-          </div>
-          <div class="icons">
-            <a class="icon" href="https://www.facebook.com/profile.php?id=100040310163390" target="_blank"><i
-              class="fa-brands fa-facebook"></i></a>
-            <a class="icon" href="https://instagram.com/arkonsklo?igshid=YmMyMTA2M2Y=" target="_blank"><i
-              class="fa-brands fa-instagram"></i></a>
-            <a class="icon" href="https://t.me/+380685059650" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            <a class="icon" href="https://wa.me/380685059650" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+380685059650">+380 44 545 77 26</a><br>
+            <a href="tel:+380971122334">+38 (097)-11-22-33-4</a><br>
+            <a href="#">Email: protected@io.com</a><br>
+            <a href="#">м. Вінниця</a>
           </div>
         </div>
         <div class="col-md-6">
-          <a class="h12" href="#">ПОСЛУГИ</a>
-          <div class="posl">Пропонуємо Вам встановлення та доставку якісних виробів зі скла, що зроблять Вашу оселю
-            неповторною. Роботу оплатити можна будь-яким зручним для Вас способом.
+          <div class="h12">ПОСЛУГИ</div>
+          <div class="posl">Наш сервіс дозволяє придбати ліцензію на антивірус,
+            що найбільше підходить для Ваших потреб та цілей.
           </div>
         </div>
       </div>
@@ -443,19 +439,11 @@
 
 
     <div class="foot_mobile">
-      <h3>СКЛЯНІ КОНСТРУКЦІЇ</h3>
-      <a href="tel:+380685059650">+38 (068) 505 96 50</a><br>
-      <a href="tel:+380507517161">+38 (050) 751 71 61</a><br>
-      <a href="#">Email: salonskla@ukr.net</a><br>
-      <a href="#">Львівська обл., м. Броди, вул. Руська, 9</a>
-      <div class="icons">
-        <a class="icon" href="https://www.facebook.com/profile.php?id=100040310163390" target="_blank"><i
-          class="fa-brands fa-facebook"></i></a>
-        <a class="icon" href="https://instagram.com/arkonsklo?igshid=YmMyMTA2M2Y=" target="_blank"><i
-          class="fa-brands fa-instagram"></i></a>
-        <a class="icon" href="https://t.me/+380685059650" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-        <a class="icon" href="https://wa.me/380685059650" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
+      <h3>Protected</h3>
+      <a href="tel:+380685059650">+380 44 545 77 26</a><br>
+      <a href="tel:+380971122334">+38 (097)-11-22-33-4</a><br>
+      <a href="#">Email: protected@io.com</a><br>
+      <a href="#">м. Вінниця</a>
     </div>
 
   </div>
